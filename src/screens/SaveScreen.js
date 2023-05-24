@@ -12,7 +12,7 @@ import {
   Ionicons,
   MaterialCommunityIcons,
 } from "@expo/vector-icons";
-export default function SaveScreen() {
+export default function SaveScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <View

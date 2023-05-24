@@ -228,7 +228,9 @@ const ExploreScreen = ({ navigation }) => {
                 </View>
                 <Text>{item.details}</Text>
                 <View style={{ flexDirection: "row" }}>
-                  <TouchableOpacity onPress={() => navigation.navigate("Save")}>
+                  <TouchableOpacity
+                    onPress={() => navigation.navigate("Profil")}
+                  >
                     <Ionicons name="location" size={20} color="black" />
                   </TouchableOpacity>
                   <Text style={{ color: "green" }}>{item.location}</Text>

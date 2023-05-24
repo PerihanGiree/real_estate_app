@@ -11,7 +11,7 @@ import { Ionicons, FontAwesome5 } from "@expo/vector-icons";
 import ListCategories from "../components/ListCategories";
 import BedList from "../components/BedList";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <ImageBackground

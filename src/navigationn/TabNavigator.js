@@ -1,5 +1,5 @@
-import * as React from "react";
-import { NavigationContainer } from "@react-navigation/native";
+import { View, Text } from "react-native";
+import React from "react";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
@@ -10,8 +10,7 @@ import ExploreScreen from "../screens/ExploreScreen";
 import HomeScreen from "../screens/HomeScreen";
 
 const Tab = createBottomTabNavigator();
-
-export default function TabNavigation() {
+export default function TabNavigator() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -22,7 +21,7 @@ export default function TabNavigation() {
             iconName = focused ? "home" : "home-outline";
           } else if (route.name === "Harita") {
             iconName = focused ? "ios-map" : "ios-map-outline";
-          } else if (route.name === "Gelen Kutusu") {
+          } else if (route.name === "GelenKutusu") {
             iconName = focused ? "chatbox" : "chatbox-outline";
           } else if (route.name === "Profil") {
             iconName = focused ? "md-person" : "md-person-outline";
@@ -39,7 +38,7 @@ export default function TabNavigation() {
         headerShown: false,
       })}
     >
-      <Tab.Screen name="Gelen Kutusu" component={InboxScreens} />
+      <Tab.Screen name="GelenKutusu" component={InboxScreens} />
       <Tab.Screen name="Anasayfa" component={HomeScreen} />
       <Tab.Screen name="Arama" component={ExploreScreen} />
       <Tab.Screen name="Harita" component={SaveScreen} />

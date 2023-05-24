@@ -13,7 +13,7 @@ import {
   MaterialCommunityIcons,
   Foundation,
 } from "@expo/vector-icons";
-const ProfileScreen = () => {
+const ProfileScreen = ({ navigation }) => {
   return (
     <SafeAreaView
       style={{
